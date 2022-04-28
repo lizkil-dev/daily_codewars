@@ -5,7 +5,7 @@
   None of the arrays will be empty, so you don't have to worry about that! */
 
 
-//My Solution//
+// My Solutions 
 
 function removeEveryOther(arr){
   for(let i = 0; i < arr.length; i++){
@@ -14,3 +14,8 @@ function removeEveryOther(arr){
   }
   return arr
 }
+
+// or 
+
+const removeEveryOther = arr => arr.filter((item, i) =>  i % 2 == 0);
+
