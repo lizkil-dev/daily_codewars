@@ -5,12 +5,10 @@ Essentially, rearrange the digits to create the highest possible number.
 
 Examples:
 Input: 42145 Output: 54421
-
 Input: 145263 Output: 654321
-
 Input: 123456789 Output: 987654321  */
 
-//My Solution
+//My Solutions
 
 function descendingOrder(n){
 
@@ -19,3 +17,8 @@ let sortedNumbers = +arrayOfNumbers.join('')
 
 return sortedNumbers
 }
+
+// or 
+
+const descendingOrder =(n) => parseInt(String(n).split('').sort((a, b) => b-a).join(''))
+
