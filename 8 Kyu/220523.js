@@ -1,4 +1,15 @@
- /* Is he gonna survive? 
+/* Square(n) Sum Solutions
+Complete the square sum function so that it squares each number passed into it and then sums the results together.
+For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9. */
+
+//My Solution
+function squareSum(numbers){
+  return numbers.reduce((acc, c) => acc + c**2, 0)
+}
+
+
+
+/* Is he gonna survive? 
   A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons!
   each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry..
   Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
