@@ -17,3 +17,9 @@ function minMax(arr){
   ;
   return minAndMax;
 }
+
+//or
+
+function minMax(arr){
+  return [Math.min(...arr), Math.max(...arr)]
+}
