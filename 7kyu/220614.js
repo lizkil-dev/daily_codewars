@@ -19,21 +19,6 @@ const XO = (str) => {
   }else return false
 }
 
-//or
-
-function XO(str) {
-  let array = str.toLowerCase().split('');
-  let xLetters = []
-  let oLetters = []
-  array.forEach(element => { 
-    element == "x" ? xLetters.push(element) : element == "o" ? oLetters.push(element) : undefined    
-  });
-  if (xLetters.length == oLetters.length) {
-    return true
-  }else if (xLetters.length == 0 && oLetters.length == 0){
-    return true
-  }else return false
-}
 
 
 
