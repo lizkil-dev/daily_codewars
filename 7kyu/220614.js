@@ -12,6 +12,15 @@ XO("zzoo") => false */
 
 //My Solution
 
+const XO = (str) => {
+  array = str.toLowerCase().split('');
+  if (array.filter(x => x == 'x').length === array.filter(o => o == 'o').length){
+    return true
+  }else return false
+}
+
+//or
+
 function XO(str) {
   let array = str.toLowerCase().split('');
   let xLetters = []
@@ -27,11 +36,4 @@ function XO(str) {
 }
 
 
-// or
 
-const XO = (str) => {
-  array = str.toLowerCase().split('');
-  if (array.filter(x => x == 'x').length === array.filter(o => o == 'o').length){
-    return true
-  }else return false
-}
