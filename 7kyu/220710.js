@@ -12,22 +12,30 @@ Example: (input --> output)
 "ATTGC" --> "TAACG"
 "GTAT" --> "CATA" */
 
-function DNAStrand(dna){
-  let array = dna.split('')
+// function DNAStrand(dna){
+//   let array = dna.split('')
 
-  let complement = []
+//   let complement = []
 
-  array.forEach(element => {
-    if(element == 'A'){
-      complement.push('T')
-    }else if(element == 'T'){
-      complement.push('A')
-    }else if(element == 'G'){
-      complement.push('C')
-    }else if(element == 'C'){
-      complement.push('G')
-    }    
-  });
-  return complement.join('')
+//   array.forEach(element => {
+//     if(element == 'A'){
+//       complement.push('T')
+//     }else if(element == 'T'){
+//       complement.push('A')
+//     }else if(element == 'G'){
+//       complement.push('C')
+//     }else if(element == 'C'){
+//       complement.push('G')
+//     }    
+//   });
+//   return complement.join('')
+// }
+
+function removeSmallest(numbers) {
+  let newArray = [...numbers]
+  let indexOfSmallest = newArray.indexOf(Math.min(...newArray))
+
+  newArray.splice(indexOfSmallest, 1)
+  return newArray
 }
 
