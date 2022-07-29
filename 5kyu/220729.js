@@ -8,17 +8,17 @@
 
 function moveZeros(arr) {
   
-  let newArray = [...arr]
+
 
   for(let i = 0; i < arr.length; i++){
     if(arr[i] === 0){
-      newArray = arr.splice(i, 1)
-      arr.push(newArray)
+      arr.splice(i, 1)
+      arr.push(i)
     }
     
   }
  
-  console.log(newArray);
+  return arr
 }
 
 moveZeros([{},0, 1,0,'8',0, 3,[],3,{}])
