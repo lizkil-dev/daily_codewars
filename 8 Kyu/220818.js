@@ -39,6 +39,3 @@ function switchItUp(number){
       return "Zero"
   }
   }
-
-
-switchItUp(2)
