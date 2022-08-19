@@ -1,4 +1,6 @@
-/* When provided with a number between 0-9, return it in words.
+/* Switch it up
+
+When provided with a number between 0-9, return it in words.
 
 Input :: 1
 

@@ -9,9 +9,8 @@ should return:
 'A' */
 
 
-function getChar(c){
-  let char = String.fromCharCode(c);
-  console.log(char);
+function getChar(c){  
+  return String.fromCharCode(c);
 }
 
 getChar(56)
