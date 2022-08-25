@@ -5,7 +5,6 @@ Example:
 
 get_char(65)
 should return:
-
 'A' */
 
 
