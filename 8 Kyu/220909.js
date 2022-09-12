@@ -12,4 +12,3 @@ function index(array, n){
   return n <= array.length-1 ? Math.pow(array[n],n) : -1;
 }
 
-index([1, 2, 3, 4],2) // 9
