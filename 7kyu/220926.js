@@ -19,4 +19,10 @@ function removeUrlAnchor(url){
   }
 }
 
-removeUrlAnchor('www.codewars.com/katas/')
+// or
+
+function removeUrlAnchor(url){
+  return url.split('#')[0]
+}
+
+
