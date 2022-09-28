@@ -11,18 +11,7 @@ arrayDiff([1,2,2,2,3],[2]) == [1,3] */
 
 
 function arrayDiff(a, b) {
-  // let num = [...b]
-  // console.log(num);
-  console.log(b.length);
-
-  if(b.length > 1){
-  for (i = 0; i < b.length-1; i++){
-     a.splice(b[i])
-  } 
-  console.log(a);
-  }else{
-  console.log(a.splice(b[0]));
-  }
+  console.log(a.filter(e => !b.includes(e)))
 }
 
-arrayDiff([1,2,2], [2])
+arrayDiff([1,2,2,2,3],[2])
