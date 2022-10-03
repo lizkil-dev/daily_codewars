@@ -5,14 +5,16 @@ Examples:
 solution('abc', 'bc') // returns true
 solution('abc', 'd') // returns false */
 
-function solution(str, ending){
-
- 
+function solution(str, ending){ 
   let slice = str.slice(-ending.length)
   if(ending.length > 0){
   return slice == ending ? true : false
   }else return true
-
-
 }
 
+function solution(str, ending){
+  return str.substr(-ending.length) == ending
+}
+
+solution('abc', 'bc') // returns true
+solution('abc', 'd') // returns false 
