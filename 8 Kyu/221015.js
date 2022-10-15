@@ -8,4 +8,3 @@ function lovefunc(flower1, flower2){
   }else console.log(false)
 }
 
-lovefunc(0,1) // false
