@@ -29,3 +29,17 @@ Return true if the array contains the value, false if not.*/
 function check(a, x) {
  return a.includes(x) ? true: false;
 }
+
+/* Reversed Words
+DESCRIPTION:
+Complete the solution so that it reverses all of the words within the string passed in.
+
+Example(Input --> Output):
+
+"The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The" */
+
+function reverseWords(str){
+  console.log(str.split(' ').reverse().join(' '));
+}
+
+reverseWords("hello world!") // "world! hello"
