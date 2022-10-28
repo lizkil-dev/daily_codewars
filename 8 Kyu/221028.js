@@ -10,6 +10,7 @@ Examples:
 4) n =  12, x = 7, y = 5 => false because  12 is neither divisible by 7 nor 5 */
 
 function isDivisible(n, x, y) {
+  console.log(n % x == 0 && n % y == 0 ? true : false)
 }
 
 isDivisible(3,3,4) //false);
