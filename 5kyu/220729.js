@@ -14,7 +14,7 @@ function moveZeros(arr) {
       arr.push(i)
     }
   }
- return arr
+ console.log(arr)
 }
 
 moveZeros([{},0, 1,0,'8',0, 3,[],3,{}])
