@@ -14,31 +14,12 @@ Examples
 
 function validateWord(s){
   s = s.toLowerCase()
-  let map = new Map ()
-  let count = 0;
- 
-  for(let key of s){
-    map.set(key, count)
-  }
- 
-  for(let key of s){
-    count = map.get(key)    
-    map.set(key, count + 1)
-  }
-  
-  let array = []
-  for(let [key, value] of map){
-    array.push(value)
-  }
-
-  console.log(array);
-  
-  
-  let sum = array.reduce((acc, cur) => acc + cur, 0) 
-  let even = sum / array.length
-
-  console.log(sum);
-  console.log(even);
-  even - Math.floor(even) == 0 ? console.log(true) : console.log(false);;
+  let set = new Set(s)
+  s.length % set.size != 0 ? console.log(false) : console.log(true);;
 }
 
+// validateWord('qWm$^zi&NpOZxqLh7e%5Agundefined3L&dNY4kkgNI4$17075W!bHp:Ftw34!Xwta:')
+validateWord('abcabc') //,true, "The word was: \"Abcabc\" \n");
+validateWord("abc123")// true, "The word was: \"abc123\" \n");
+validateWord("abcabcd") //false, "The word was: \"abcabcd\" \n");
+// validateWord("abc!abc!") //true, "The word was: \"abc!abc!\" \n")
