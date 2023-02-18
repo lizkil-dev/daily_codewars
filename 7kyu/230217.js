@@ -12,14 +12,28 @@ Examples
 "123abc!" is a valid word because all of the characters only appear once in the word. */ 
 
 
-function validateWord(s){
-  s = s.toLowerCase()
-  let set = new Set(s)
-  s.length % set.size != 0 ? console.log(false) : console.log(true);;
-}
+// function validateWord(s){
+//   s = s.toLowerCase()
+//   let set = new Set(s)
+//   s.length % set.size != 0 ? console.log(false) : console.log(true);;
+// }
 
-// validateWord('qWm$^zi&NpOZxqLh7e%5Agundefined3L&dNY4kkgNI4$17075W!bHp:Ftw34!Xwta:')
-validateWord('abcabc') //,true, "The word was: \"Abcabc\" \n");
-validateWord("abc123")// true, "The word was: \"abc123\" \n");
-validateWord("abcabcd") //false, "The word was: \"abcabcd\" \n");
-// validateWord("abc!abc!") //true, "The word was: \"abc!abc!\" \n")
+
+
+
+/* In this Kata, you will be given an array of numbers in which two numbers occur once and the rest occur only twice. Your task will be to return the sum of the numbers that occur only once.
+
+For example, repeats([4,5,7,5,4,8]) = 15 because only the numbers 7 and 8 occur once, and their sum is 15. Every other number occurs twice.
+
+More examples in the test cases.
+
+Good luck! */
+
+function repeats(arr){
+  console.log(arr.filter(el => arr.indexOf(el) === arr.lastIndexOf(el)).reduce((a, c) => a + c, 0))
+  };
+
+  repeats([4,5,7,5,4,8]) // 15)
+  repeats([9, 10, 19, 13, 19, 13])// 19)
+  repeats([16, 0, 11, 4, 8, 16, 0, 11])// 12)
+  repeats([5, 17, 18, 11, 13, 18, 11, 13])// 22);
