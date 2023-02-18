@@ -29,9 +29,19 @@ More examples in the test cases.
 
 Good luck! */
 
+// function repeats(arr){
+//   console.log(arr.filter(el => arr.indexOf(el) === arr.lastIndexOf(el)).reduce((a, c) => a + c, 0))
+//   };
+
+
 function repeats(arr){
-  console.log(arr.filter(el => arr.indexOf(el) === arr.lastIndexOf(el)).reduce((a, c) => a + c, 0))
-  };
+
+  let set = new Set()
+
+  arr.forEach(el => set.has(el) ? set.delete(el) : set.add(el))
+  let result = [...set].reduce((a, c) => a + c, 0)
+  console.log(result);
+}
 
   repeats([4,5,7,5,4,8]) // 15)
   repeats([9, 10, 19, 13, 19, 13])// 19)
