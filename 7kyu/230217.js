@@ -34,16 +34,38 @@ Good luck! */
 //   };
 
 
-function repeats(arr){
+// function repeats(arr){
 
-  let set = new Set()
+//   let set = new Set()
 
-  arr.forEach(el => set.has(el) ? set.delete(el) : set.add(el))
-  let result = [...set].reduce((a, c) => a + c, 0)
-  console.log(result);
+//   arr.forEach(el => set.has(el) ? set.delete(el) : set.add(el))
+//   let result = [...set].reduce((a, c) => a + c, 0)
+//   console.log(result);
+// }
+
+//   repeats([4,5,7,5,4,8]) // 15)
+//   repeats([9, 10, 19, 13, 19, 13])// 19)
+//   repeats([16, 0, 11, 4, 8, 16, 0, 11])// 12)
+//   repeats([5, 17, 18, 11, 13, 18, 11, 13])// 22);
+
+
+
+
+/* Even numbers in an array
+
+DESCRIPTION:
+Given an array of numbers, return a new array of length number containing the last even numbers from the original array (in the same order). The original array will be not empty and will contain at least "number" even numbers.
+
+For example:
+
+([1, 2, 3, 4, 5, 6, 7, 8, 9], 3) => [4, 6, 8]
+([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2) => [-8, 26]
+([6, -25, 3, 7, 5, 5, 7, -3, 23], 1) => [6] */ 
+
+const evenNumbers = (array, number) => {
+      console.log(array.filter(el => el % 2 == 0).slice(-number))
 }
 
-  repeats([4,5,7,5,4,8]) // 15)
-  repeats([9, 10, 19, 13, 19, 13])// 19)
-  repeats([16, 0, 11, 4, 8, 16, 0, 11])// 12)
-  repeats([5, 17, 18, 11, 13, 18, 11, 13])// 22);
+evenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3) // [4, 6, 8]);
+evenNumbers([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2) // [-8, 26]);
+evenNumbers([6, -25, 3, 7, 5, 5, 7, -3, 23], 1) // [6]);
