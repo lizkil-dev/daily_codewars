@@ -30,7 +30,7 @@ Examples
 "din"      =>  "((("
 "recede"   =>  "()()()"
 "Success"  =>  ")())())"
-"(( @"     =>  "))(("  */
+*/
 
 
 function duplicateEncode(word){
