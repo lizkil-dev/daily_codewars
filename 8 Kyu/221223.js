@@ -3,6 +3,6 @@
 If no arguments are given, ball objects should instantiate with a "ball type" of "regular." */
 
 
-var Ball = function(ballType) {
+let Ball = function(ballType) {
   this.ballType = ballType || 'regular';
 };
