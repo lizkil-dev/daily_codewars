@@ -13,13 +13,15 @@ Note: N may be 1 or less (in the latter case, the first array will be []). */
 function findDeletedNumber(arr, mixArr) {
 
 
-  if (arr.length == mixArr.length) {
-    console.log(0);
-  } else {
-    let arrSum = arr.reduce((a, c) => a += c, 0)
-    let mixArrSum = mixArr.reduce((a, c) => a += c, 0)
-    console.log(arrSum - mixArrSum);
-      }
+  // if (arr.length == mixArr.length) {
+  //   console.log(0);
+  // } else {
+  //   let arrSum = arr.reduce((a, c) => a += c, 0)
+  //   let mixArrSum = mixArr.reduce((a, c) => a += c, 0)
+  //   console.log(arrSum - mixArrSum);
+  //     }
+
+  console.log(arr.filter((el) => mixArr.indexOf(el) == -1)[0] || 0)
 }
 
 findDeletedNumber([-1, -2, -3, -4, -5], [-3, -4, -1, -5]) // 2, 'Deletion')
