@@ -17,5 +17,3 @@ removeConsecutiveDuplicates ("alpha beta beta gamma gamma gamma delta alpha beta
 removeConsecutiveDuplicates("alpha alpha alpha alpha")//, "alpha");
 removeConsecutiveDuplicates("alpha beta alpha")//, "alpha beta alpha");
 removeConsecutiveDuplicates("alpha alphabeta alphagamma")//, "alpha alphabeta alphagamma");
-removeConsecutiveDuplicates("alpha alpha beta alpha alpha")//, "alpha beta alpha");
-removeConsecutiveDuplicates("alpha beta beta")//, "alpha beta");
