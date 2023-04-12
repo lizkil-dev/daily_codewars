@@ -10,6 +10,7 @@ Words will be separated by a single space. There will be no leading or trailing 
 
 function removeConsecutiveDuplicates(string) {
   let arr = string.split(' ')
+  console.log(arr);
   console.log(arr.filter((el, i, a) => el != a[i-1]));
 }
 
