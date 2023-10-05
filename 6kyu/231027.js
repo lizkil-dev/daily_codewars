@@ -7,12 +7,17 @@ For example (Input --> Output):
 4 --> 0 (because 4 is already a one-digit number) */
 
 function persistence(num) {
-  let arr = num.toString().split('').map((el => Number(el)))
+  num = num.toString()
   let count = 0
 
- for (let i = 0; arr.length > 1; i++){
-  
-   arr = arr.reduce((a, b) => a * b, 1).toString().split('').map((el => Number(el)))
-   count++
-  } 
+  //  for (let i = 0; arr.length > 1; i++){
+
+  //    arr = arr.reduce((a, b) => a * b, 1).toString().split('').map((el => Number(el)))
+  //    count++
+  //   } 
+
+  while (arr.length > 1) {
+    count++;
+    num = num.split('').map(Number).reduce((a, b) => a * b).toString();
+  }
 }
