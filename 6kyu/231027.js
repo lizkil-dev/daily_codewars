@@ -16,8 +16,11 @@ function persistence(num) {
   //    count++
   //   } 
 
-  while (arr.length > 1) {
+  while (num.length > 1) {
     count++;
     num = num.split('').map(Number).reduce((a, b) => a * b).toString();
   }
+  console.log(count);
 }
+
+persistence(999)
