@@ -6,15 +6,5 @@ but years divisible by 400 are leap years.
 Tested years are in range 1600 ≤ year ≤ 4000. */
 
 function isLeapYear(year) {
-  if (year % 100 == 0 && year % 400 !== 0 ) {
-    console.log("false")
-  }
-  else if (year % 4 === 0 && year % 400 === 0) {
-    console.log("true")
-  }
- else console.log(('false'));
+  return (year % 100 !== 0 && year % 4 === 0) || year % 400 === 0;
 }
-
-
-isLeapYear(2000) // true
-isLeapYear(2015) // false
