@@ -23,4 +23,4 @@ function toCamelCase(str){
   console.log('result:', result)
 }
 
-toCamelCase('a_Pippi-is-cute')
+
