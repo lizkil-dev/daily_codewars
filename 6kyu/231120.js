@@ -24,6 +24,5 @@ function toCamelCase(str){
 }
 
 
-toCamelCase('') // '', "An empty string was provided but not returned")
 toCamelCase("the_stealth_warrior") // "theStealthWarrior", "toCamelCase('the_stealth_warrior') did not return correct value")
 
