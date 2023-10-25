@@ -24,5 +24,4 @@ function toCamelCase(str){
 }
 
 
-toCamelCase("the_stealth_warrior") // "theStealthWarrior", "toCamelCase('the_stealth_warrior') did not return correct value")
 
