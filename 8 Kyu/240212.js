@@ -8,7 +8,7 @@ Example:
 This example will return the string Hello, John Smith! Welcome to Phoenix, Arizona! */
 
 function sayHello( name, city, state ) {
-  let fullName = name.toString().split(',').join(' ')
+  let fullName = name.join(' ')
  
   console.log(`Hello, ${fullName}! Welcome to ${city}, ${state}!`)
 }
