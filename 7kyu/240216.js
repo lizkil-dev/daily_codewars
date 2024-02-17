@@ -8,7 +8,15 @@ Examples
 [1, 1, 2] ==> 2
 [17, 17, 3, 17, 17, 17, 17] ==> 3 */
 
-const stray = nums => nums.reduce((a, b) => a ^ b)
+function stray(numbers) {
+ console.log(numbers.sort())
+
+ let sorted = numbers.sort()
+ 
+ sorted[0] !== sorted[1] ? sorted[0] : sorted[sorted.length -1]
+
+}
 
  stray([1, 1, 2]) // 2
-/stray([17, 17, 3, 17, 17, 17, 17]) // 30
+stray([17, 17, 3, 17, 17, 17, 17]) // 30
+stray([3, 3, 17, 3, 3])
