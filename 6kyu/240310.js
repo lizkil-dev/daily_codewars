@@ -17,5 +17,5 @@ function alphabetPosition(text) {
     nbr = text.toUpperCase().charCodeAt(i)
     nbr > 64 && nbr < 91 ? result += (nbr - 64) + " " : null
   }
-  console.log(result);
+  return result
 }
