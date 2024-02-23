@@ -19,4 +19,3 @@ function alphabetPosition(text) {
   }
   console.log(result);
 }
-
